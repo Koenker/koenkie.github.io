@@ -8,6 +8,7 @@
 html, body {
     height: 100%;
     overflow-x: hidden; /* Hide horizontal scroll, only vertical should be possible */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
 /* Each section takes up the entire viewport */
@@ -18,7 +19,7 @@ section {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    scroll-snap-align: start; /* Optional: Snap sections to the viewport when scrolling */
+    scroll-snap-align: start; /* Snap sections to the viewport when scrolling */
 }
 
 /* Add background colors for each section (you can customize these) */
