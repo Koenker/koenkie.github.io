@@ -2,7 +2,7 @@
 
 /* Set up the section with the background image */
 #section1 {
-    background-image: url('your-image.jpg'); /* Replace with your image path */
+    background-image: url('LandingBackground.jpeg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     transition: background-position 0.1s; /* Smooth transition for movement */
