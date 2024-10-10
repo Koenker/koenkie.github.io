@@ -1,63 +1,48 @@
-/* styles.css */
-
+/* Reset some default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
-header {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.full-screen {
-    height: 100vh; /* Full viewport height */
+/* Each section takes up the entire viewport */
+section {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    scroll-snap-align: start;
+    font-family: Arial, sans-serif;
 }
 
+/* Add background colors for each section (you can customize these) */
 #section1 {
-    background-color: #ff9999;
+    background-color: #1abc9c;
 }
 
 #section2 {
-    background-color: #99ccff;
+    background-color: #3498db;
 }
 
 #section3 {
-    background-color: #ccff99;
+    background-color: #9b59b6;
 }
 
 #section4 {
-    background-color: #ffcc99;
+    background-color: #e74c3c;
 }
 
 #section5 {
-    background-color: #99ffcc;
+    background-color: #f39c12;
 }
 
-footer {
-    background-color: #333;
+/* Simple text styling */
+.content h1 {
+    font-size: 3rem;
     color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
