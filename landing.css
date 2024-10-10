@@ -2,7 +2,7 @@
 
 /* Set up the section with the background image */
 #section1 {
-    background-image: url('LandingBackground.jpeg'); /* Use your image path */
+    background-image: url('https://via.placeholder.com/1920x1080'); /* A placeholder image */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     height: 100vh; /* Ensure the section takes full height */
