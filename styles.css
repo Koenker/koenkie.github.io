@@ -24,23 +24,23 @@ section {
 
 /* Add background colors for each section (you can customize these) */
 #section1 {
-    background-color: #1abc9c;
+    background-color: #22223b;
 }
 
 #section2 {
-    background-color: #3498db;
+    background-color: #4a4e69;
 }
 
 #section3 {
-    background-color: #9b59b6;
+    background-color: #f2e9e4;
 }
 
 #section4 {
-    background-color: #e74c3c;
+    background-color: #c9ada7;
 }
 
 #section5 {
-    background-color: #f39c12;
+    background-color: #9a8c98;
 }
 
 /* Simple text styling */
