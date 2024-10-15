@@ -11,7 +11,7 @@ html, body {
     scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
-/* Each section takes up the entire viewport */
+/* Make fullscreen sections */
 section {
     width: 100vw;
     height: 100vh;
@@ -22,28 +22,28 @@ section {
     scroll-snap-align: start; /* Snap sections to the viewport when scrolling */
 }
 
-/* Add background colors for each section (you can customize these) */
-#section1 {
+/* Colors */
+#Black {
     background-color: #22223b;
 }
 
-#section2 {
+#Dark {
     background-color: #4a4e69;
 }
 
-#section3 {
-    background-color: #f2e9e4;
-}
-
-#section4 {
-    background-color: #c9ada7;
-}
-
-#section5 {
+#Light {
     background-color: #9a8c98;
 }
 
-/* Simple text styling */
+#Lighter {
+    background-color: #c9ada7;
+}
+
+#Lightest {
+    background-color: #f2e9e4;
+}
+
+/* Header Style */
 .content h1 {
     font-size: 3rem;
     color: white;
