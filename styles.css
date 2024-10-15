@@ -23,23 +23,23 @@ section {
 }
 
 /* Colors */
-#Black {
+#Section1 {
     background-color: #22223b;
 }
 
-#Dark {
+#Section2 {
     background-color: #4a4e69;
 }
 
-#Light {
+#Section3 {
     background-color: #9a8c98;
 }
 
-#Lighter {
+#Section4 {
     background-color: #c9ada7;
 }
 
-#Lightest {
+#Section5 {
     background-color: #f2e9e4;
 }
 
