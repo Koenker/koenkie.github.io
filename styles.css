@@ -1,4 +1,4 @@
-/* Reset some default margins and paddings */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,33 +6,28 @@
 }
 
 html, body {
-    height: 100%; /* Ensure full height is used */
+    height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevents unnecessary scroll bars on body */
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
-/* The container wraps all sections and controls snapping */
 .container {
-    scroll-snap-type: y mandatory; /* Vertical scroll snapping */
+    scroll-snap-type: y mandatory;
     height: 100vh;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    padding-right: 15px; /* Add space for scrollbar */
-    /* Use a negative margin to compensate for the scrollbar width */
-    margin-right: -15px; /* This should match the scrollbar width */
+    overflow-y: scroll;
 }
 
-/* Each section takes up the entire viewport */
 section {
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start; /* Ensure each section snaps at the start */
+    scroll-snap-align: start;
     font-family: Arial, sans-serif;
 }
 
-/* Background colors for each section (customize as needed) */
 #section1 {
     background-color: #1abc9c;
 }
@@ -53,7 +48,6 @@ section {
     background-color: #f39c12;
 }
 
-/* Simple text styling */
 .content h1 {
     font-size: 3rem;
     color: white;
