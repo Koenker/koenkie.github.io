@@ -8,23 +8,23 @@
 html, body {
     height: 100%; /* Ensure full height is used */
     margin: 0;
-    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    overflow: hidden; /* Prevents unnecessary scroll bars on body */
 }
 
 /* The container wraps all sections and controls snapping */
 .container {
     scroll-snap-type: y mandatory; /* Vertical scroll snapping */
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow-y: scroll; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    /* To avoid horizontal scrollbar */
-    padding-right: 15px; /* Adjust padding to prevent overflow due to scrollbar width */
+    padding-right: 15px; /* Add space for scrollbar */
+    /* Use a negative margin to compensate for the scrollbar width */
+    margin-right: -15px; /* This should match the scrollbar width */
 }
 
 /* Each section takes up the entire viewport */
 section {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
     display: flex;
     justify-content: center;
     align-items: center;
