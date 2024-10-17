@@ -6,12 +6,11 @@
 }
 
 html, body {
-    height: 100%;
-    overflow-x: hidden; /* Hide horizontal scroll, only vertical should be possible */
-    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    height: 100%; /* Make sure the body is set to 100% height */
+    overflow-x: hidden; /* Keep horizontal scrolling disabled */
 }
 
-/* Make fullscreen sections */
+/* Each section takes up the entire viewport */
 section {
     width: 100vw;
     height: 100vh;
@@ -19,31 +18,36 @@ section {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    scroll-snap-align: start; /* Snap sections to the viewport when scrolling */
+    scroll-snap-align: start; /* Optional: for smooth snapping while scrolling */
 }
 
-/* Colors */
-#Section1 {
-    background-color: #22223b;
+/* Optional: smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
 }
 
-#Section2 {
-    background-color: #4a4e69;
+/* Add background colors for each section (you can customize these) */
+#section1 {
+    background-color: #1abc9c;
 }
 
-#Section3 {
-    background-color: #9a8c98;
+#section2 {
+    background-color: #3498db;
 }
 
-#Section4 {
-    background-color: #c9ada7;
+#section3 {
+    background-color: #9b59b6;
 }
 
-#Section5 {
-    background-color: #f2e9e4;
+#section4 {
+    background-color: #e74c3c;
 }
 
-/* Header Style */
+#section5 {
+    background-color: #f39c12;
+}
+
+/* Simple text styling */
 .content h1 {
     font-size: 3rem;
     color: white;
