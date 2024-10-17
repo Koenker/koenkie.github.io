@@ -6,15 +6,17 @@
 }
 
 html, body {
-    height: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth; /* Smooth scroll behavior */
+    height: 100%; /* Ensure full height is used */
+    margin: 0;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    overflow: hidden; /* Prevents unnecessary scroll bars */
 }
 
-/* Enable scroll snapping */
-body {
-    scroll-snap-type: y mandatory; /* Snap on the Y-axis, mandatory snapping */
-    overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+/* The container wraps all sections and controls snapping */
+.container {
+    scroll-snap-type: y mandatory; /* Vertical scroll snapping */
+    height: 100vh;
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 /* Each section takes up the entire viewport */
@@ -24,11 +26,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start; /* Ensure each section snaps at the start */
     font-family: Arial, sans-serif;
-    scroll-snap-align: start; /* Snap the section to the top when it scrolls into view */
 }
 
-/* Add background colors for each section (you can customize these) */
+/* Background colors for each section (customize as needed) */
 #section1 {
     background-color: #1abc9c;
 }
