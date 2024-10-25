@@ -1,7 +1,7 @@
 // Array of additional items for the gallery
 const additionalItems = [
     "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", 
-    "Item 11", "Item 12", "Item 13", "Item 14", "Item 15", "Item 14", "Item 15"
+    "Item 11", "Item 12", "Item 13", "Item 14", "Item 15", "Item 16", "Item 17"
 ];
 
 // Function to add more items to the gallery
