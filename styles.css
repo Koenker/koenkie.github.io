@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +28,7 @@ section {
     font-family: Arial, sans-serif;
 }
 
+/* Background colors */
 #section1 {
     background-color: #1abc9c;
 }
@@ -39,6 +39,8 @@ section {
 
 #section3 {
     background-color: #9b59b6;
+    overflow-y: auto; /* Internal scrolling within Section 3 */
+    padding: 20px;
 }
 
 #section4 {
@@ -52,4 +54,36 @@ section {
 .content h1 {
     font-size: 3rem;
     color: white;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    overflow-y: hidden;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#load-more {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
