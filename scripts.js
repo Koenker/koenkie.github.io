@@ -1,23 +1,16 @@
-// Array of additional items for the gallery
-const additionalItems = [
-    "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10", 
-    "Item 11", "Item 12", "Item 13", "Item 14", "Item 15"
-];
+// Reference to the main container and section 3
+const container = document.querySelector('.container');
+const section3 = document.getElementById('section3');
 
-// Function to add more items to the gallery
-function loadMoreItems() {
-    const galleryGrid = document.getElementById('gallery-grid');
-    
-    // Add each item to the gallery grid
-    additionalItems.forEach(itemText => {
-        const newItem = document.createElement('div');
-        newItem.className = 'gallery-item';
-        newItem.textContent = itemText;
-        galleryGrid.appendChild(newItem);
-    });
-    
-    // Optionally disable the button after loading more items
-    const loadMoreButton = document.getElementById('load-more');
-    loadMoreButton.disabled = true;
-    loadMoreButton.textContent = "No More Items";
-}
+// Toggle snap on or off based on scroll position in section 3
+section3.addEventListener('scroll', () => {
+    const atTop = section3.scrollTop === 0;
+    const atBottom = section3.scrollHeight - section3.scrollTop === section3.clientHeight;
+
+    // Disable snapping when scrolling within Section 3
+    if (!atTop && !atBottom) {
+        container.style.scrollSnapType = 'none';
+    } else {
+        container.style.scrollSnapType = 'y mandatory';
+    }
+});
