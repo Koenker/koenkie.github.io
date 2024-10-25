@@ -79,7 +79,9 @@ section {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    height: 300px; /* Increase height temporarily to make the gallery scrollable */
 }
+
 
 #load-more {
     margin: 20px;
