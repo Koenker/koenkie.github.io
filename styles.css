@@ -38,6 +38,8 @@ section {
 
 #section3 {
     background-color: #9b59b6;
+    min-height: 100vh; /* Allows expansion beyond viewport height */
+    align-items: start; /* Positions content at the top for natural expansion */
 }
 
 #section4 {
