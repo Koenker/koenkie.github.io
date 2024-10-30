@@ -9,28 +9,17 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     overflow: hidden;
-    overflow-y: auto;
-}
-
-.snap-container {
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    overflow-y: scroll;
-}
-
-.snap-container section {
-    scroll-snap-align: start;
 }
 
 .container {
-    height: auto;
-    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.no-snap {
-    scroll-snap-align: none;
-}
-    
+.container section:nth-child(3) ~ section {
+    scroll-snap-type: none; /* Disable scroll snap for sections following Section 2 */
 }
 
 section {
@@ -53,19 +42,21 @@ section {
 
 #section3 {
     background-color: #9b59b6;
-    height: auto;
-    min-height: 100vh; /* Ensures it still covers the viewport at minimum */
+    min-height: 100vh;
+    height: auto; /* Allow Section 3 to expand based on grid content */
+    scroll-snap-align: unset; /* Disable scroll snap alignment
 }
 
 #section4 {
     background-color: #e74c3c;
+    scroll-snap-align: unset; /* Disable scroll snap alignment
 }
 
 #section5 {
     background-color: #f39c12;
+    scroll-snap-align: unset; /* Disable scroll snap alignment
 }
 
 .content h1 {
     font-size: 3rem;
     color: white;
-}
