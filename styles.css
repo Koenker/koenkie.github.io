@@ -12,12 +12,20 @@ html, body {
     overflow-y: auto;
 }
 
-.container {
+.snap-container {
     scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.snap-container section {
+    scroll-snap-align: start;
+}
+
+.container {
     height: auto;
-    overflow-x: hidden;
     overflow-y: auto;
-    min-height: 100vh;
+}
 
 .no-snap {
     scroll-snap-align: none;
