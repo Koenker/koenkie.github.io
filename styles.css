@@ -12,8 +12,8 @@ html, body {
 }
 
 .container {
-    scroll-snap-type: y mandatory;
-    height: 100vh;
+    scroll-snap-type: y proximity;
+    height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -38,6 +38,8 @@ section {
 
 #section3 {
     background-color: #9b59b6;
+    min-height: 100vh; /* Keeps a minimum height of 100vh but allows it to grow */
+    overflow: auto;
 }
 
 #section4 {
