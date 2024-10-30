@@ -12,7 +12,7 @@ html, body {
 }
 
 .container {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
