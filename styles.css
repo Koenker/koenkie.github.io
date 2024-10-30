@@ -39,7 +39,6 @@ section {
 #section3 {
     background-color: #9b59b6;
     min-height: 100vh; /* Keeps a minimum height of 100vh but allows it to grow */
-    overflow: auto;
 }
 
 #section4 {
