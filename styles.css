@@ -11,13 +11,21 @@ html, body {
     overflow: hidden;
 }
 
+/* Outer container to enable smooth scrolling across both containers */
+.outer-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Inner containers */
 .container {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-/* Only enable scroll snapping for the first container */
+/* Enable snapping only for the first container */
 .container.snapping {
     scroll-snap-type: y mandatory;
 }
