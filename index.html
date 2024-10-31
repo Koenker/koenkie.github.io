@@ -1,40 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    /* width */
-    ::-webkit-scrollbar {
-    width: 10px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid voor Koen</title>
+
+  <!-- Alles tussen <style> tags zijn css properties -->
+  <style>
+    
+    body{
+        display:flex;
+        justify-content: center;
     }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: #888; 
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-    }
-
-    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
-    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
-    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
-    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
     /* Flex container is hoe groot de ruimte is die de grid mag innemen */
     .flex {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 900px;
     }
 
     /* Voor grid columns doen we fracties in  grid-template-columns, en voor de hoogte doen we auto rows van x pixels */
@@ -92,121 +76,48 @@
       grid-column: span 1;
       grid-row: span 1;
     }
+  </style>
 
-</style>
+<!-- Alles hieronder is html -->
 </head>
-
 <body>
 
-    <div class="container">
-        <section id="section1">
-            <div class="content">
-                <h1>Section 1</h1>
-            </div>
-        </section>
+<div class="flex">
+<!-- Grid container is het element waar alle fotos in zitten -->
+<div class="grid-container">
 
-        <section id="section2">
-            <div class="content">
-                <h1>Section 2</h1>
-            </div>
-        </section>
+    <!-- Grid item is een foto van hier-->
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/27914234/pexels-photo-27914234/free-photo-of-vrouw-mevrouw-zitten-model.jpeg" alt="Funny collage image 1">
+  </div>
+    <!-- tot hier -->
 
-        <section id="section3">
-            <div class="content">
-                <h1>Section 3</h1>
-                <div class="flex">
-                  <!-- Grid container is het element waar alle fotos in zitten -->
-                  <div class="grid-container">
-                  
-                      <!-- Grid item is een foto van hier-->
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27914234/pexels-photo-27914234/free-photo-of-vrouw-mevrouw-zitten-model.jpeg" alt="Funny collage image 1">
-                    </div>
-                      <!-- tot hier -->
-                  
-                    <div class="grid-item">
-                      <a href="#img1">
-                        <img src="https://images.unsplash.com/photo-1729772164459-6dbe32e20510?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Funny collage image 2">
-                      </a>
-                    </div>
-                    <div class="grid-item">
-                      <a href="#img2">
-                      <img src="https://images.pexels.com/photos/25682003/pexels-photo-25682003/free-photo-of-weg-straat-landschap-tuinieren.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 3">
-                      </a>
-                    </div>  
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/16248186/pexels-photo-16248186/free-photo-of-bank-op-natte-pier-in-de-regen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 4">
-                    </div>  
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/28406115/pexels-photo-28406115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 5">
-                    </div>  
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                    <div class="grid-item">
-                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
-                    </div>
-                  </div>
-                  </div>
-            </div>
-        </section>
-
-            <!-- Lightbox popups for each image -->
-    <div class="lightbox" id="img1">
-        <a href="#section3" class="close"></a>
-        <img src="https://images.pexels.com/photos/27914234/pexels-photo-27914234/free-photo-of-vrouw-mevrouw-zitten-model.jpeg" alt="Funny collage image 1">
-    </div>
-    
-    <div class="lightbox" id="img2">
-        <a href="#section3" class="close"></a>
-        <img src="https://images.unsplash.com/photo-1729772164459-6dbe32e20510?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Funny collage image 2">
-    </div>
-
-        <section id="section4">
-            <div class="content">
-                <h1>Section 4</h1>
-            </div>
-        </section>
-
-        <section id="section5">
-            <div class="content">
-                <h1>Section 5</h1>
-            </div>
-        </section>
-    </div>
+  <div class="grid-item">
+    <img src="https://images.unsplash.com/photo-1729772164459-6dbe32e20510?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="Funny collage image 2">
+  </div>
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/25682003/pexels-photo-25682003/free-photo-of-weg-straat-landschap-tuinieren.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Funny collage image 3">
+  </div>  
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/16248186/pexels-photo-16248186/free-photo-of-bank-op-natte-pier-in-de-regen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Funny collage image 4">
+  </div>  
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/28406115/pexels-photo-28406115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Funny collage image 5">
+  </div>  
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Funny collage image 6">
+  </div>
+  <div class="grid-item">
+    <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        alt="Funny collage image 6">
+  </div>
+</div>
+</div>
 
 </body>
 </html>
