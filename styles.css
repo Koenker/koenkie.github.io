@@ -11,43 +11,39 @@ html, body {
     overflow: hidden;
 }
 
-/* Main container for all sections */
 .container {
-    height: 100vh; /* Height should remain 100vh for snapping sections */
+    height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scroll-snap-type: y mandatory; /* Enable snapping for the entire container */
+    overflow-y: scroll;
 }
-
-/* Snapping behavior only for sections 1 and 2 */
-#section1 {
-    scroll-snap-align: start;
-    background-color: #1abc9c; /* Section 1 color */
-}
-
-#section2 {
-    scroll-snap-align: start;
-    background-color: #3498db; /* Section 2 color */
-}
-
-/* Normal scroll sections without snapping */
-#section3, #section4, #section5 {
-    scroll-snap-align: none; /* Disable snapping */
-    height: auto; /* Allow these sections to take their content's height */
-    min-height: 100vh; /* Ensure each section is at least 100vh */
-}
-
-/* Background colors for sections 3, 4, and 5 */
-#section3 { background-color: #9b59b6; }
-#section4 { background-color: #e74c3c; }
-#section5 { background-color: #f39c12; }
 
 section {
     width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+}
+
+#section1 {
+    background-color: #1abc9c;
+}
+
+#section2 {
+    background-color: #3498db;
+}
+
+#section3 {
+    background-color: #9b59b6;
+}
+
+#section4 {
+    background-color: #e74c3c;
+}
+
+#section5 {
+    background-color: #f39c12;
 }
 
 .content h1 {
