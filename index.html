@@ -25,6 +25,75 @@
     ::-webkit-scrollbar-thumb:hover {
     background: #555; 
     }
+
+    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
+    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
+    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
+    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
+    /* Flex container is hoe groot de ruimte is die de grid mag innemen */
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:900px;
+    }
+
+    /* Voor grid columns doen we fracties in  grid-template-columns, en voor de hoogte doen we auto rows van x pixels */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      padding: 10px;
+      gap: 10px;
+      
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .grid-item:nth-child(1) {
+      /* Geeft aan hoeveel column fractions te pakken */
+      grid-column: span 2;
+      /* Doet hoeveelheid x auto row */
+      grid-row: span 2;
+    }
+    .grid-item:nth-child(2) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .grid-item:nth-child(3) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    .grid-item:nth-child(4) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .grid-item:nth-child(5) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .grid-item:nth-child(6) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .grid-item:nth-child(7) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .grid-item:nth-child(8) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
 </style>
 </head>
 
@@ -46,6 +115,36 @@
         <section id="section3">
             <div class="content">
                 <h1>Section 3</h1>
+                <div class="flex">
+                  <!-- Grid container is het element waar alle fotos in zitten -->
+                  <div class="grid-container">
+                  
+                      <!-- Grid item is een foto van hier-->
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/27914234/pexels-photo-27914234/free-photo-of-vrouw-mevrouw-zitten-model.jpeg" alt="Funny collage image 1">
+                    </div>
+                      <!-- tot hier -->
+                  
+                    <div class="grid-item">
+                      <img src="https://images.unsplash.com/photo-1729772164459-6dbe32e20510?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Funny collage image 2">
+                    </div>
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/25682003/pexels-photo-25682003/free-photo-of-weg-straat-landschap-tuinieren.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 3">
+                    </div>  
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/16248186/pexels-photo-16248186/free-photo-of-bank-op-natte-pier-in-de-regen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 4">
+                    </div>  
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/28406115/pexels-photo-28406115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 5">
+                    </div>  
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
+                    </div>
+                    <div class="grid-item">
+                      <img src="https://images.pexels.com/photos/27647754/pexels-photo-27647754/free-photo-of-dageraad-morgenstond-vrouw-mevrouw.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Funny collage image 6">
+                    </div>
+                  </div>
+                  </div>
             </div>
         </section>
 
