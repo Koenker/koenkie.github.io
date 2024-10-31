@@ -7,20 +7,21 @@
 html, body {
     height: 100%;
     margin: 0;
-    scroll-behavior: smooth;
-    overflow: hidden;
+    scroll-behavior: smooth; /* Keeps smooth scrolling */
 }
 
 .container {
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: hidden; /* Keep horizontal overflow hidden */
+    overflow-y: auto; /* Change to auto to allow scrolling */
 }
 
 section {
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
 }
 
