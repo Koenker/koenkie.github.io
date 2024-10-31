@@ -17,7 +17,7 @@ html, body {
     overflow-y: scroll;
 }
 
-/* Use scroll snapping only for the first two sections */
+/* Only enable scroll snapping for the first container */
 .container.snapping {
     scroll-snap-type: y mandatory;
 }
