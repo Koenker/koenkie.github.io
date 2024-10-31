@@ -11,20 +11,14 @@ html, body {
     overflow: hidden;
 }
 
-/* Main container for all sections */
 .container {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity; /* Use proximity instead of mandatory */
 }
 
-/* Enable snapping only on the first two sections */
-#section1, #section2 {
-    scroll-snap-align: start;
-}
-
-/* No scroll snapping for the other sections */
 section {
     width: 100vw;
     height: 100vh;
@@ -32,14 +26,28 @@ section {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    scroll-snap-align: start; /* Snap alignment for sections 1 and 2 */
 }
 
-/* Background colors for each section */
-#section1 { background-color: #1abc9c; }
-#section2 { background-color: #3498db; }
-#section3 { background-color: #9b59b6; }
-#section4 { background-color: #e74c3c; }
-#section5 { background-color: #f39c12; }
+#section1 {
+    background-color: #1abc9c;
+}
+
+#section2 {
+    background-color: #3498db;
+}
+
+#section3 {
+    background-color: #9b59b6;
+}
+
+#section4 {
+    background-color: #e74c3c;
+}
+
+#section5 {
+    background-color: #f39c12;
+}
 
 .content h1 {
     font-size: 3rem;
